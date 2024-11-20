@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node infra/index.ts",
+  "app": "npx ts-node ./bin/index.ts",
   "watch": {
     "include": ["**"],
     "exclude": [

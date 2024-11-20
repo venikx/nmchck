@@ -1,19 +1,20 @@
 {
+  "name": "nmchck",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": ["packages/*", "infra"],
   "scripts": {
-    "tsc-infra": "tsc infra/index.ts",
-    "tsc-code": "tsc src/index.ts"
+    "build": "npm run build --workspace frontend && npm run build --workspace lambda-function",
+    "deploy": "npm run deploy --workspace infra"
   },
   "devDependencies": {
-    "@types/node": "^22.9.1",
-    "aws-cdk-lib": "^2.136.0",
-    "constructs": "^10.1.136",
-    "esbuild": "^0.24.0",
+    "@tsconfig/node20": "^20.1.4",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3"
   },
-  "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.696.0",
-    "@aws-sdk/client-lambda": "^3.696.0",
-    "hono": "^4.6.10"
+  "dependencies": {},
+  "engines": {
+    "npm": ">=10.8.0",
+    "node": ">=20.0.0"
   }
 }

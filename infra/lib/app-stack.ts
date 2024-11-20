@@ -1,4 +1,5 @@
 import * as cdk from "aws-cdk-lib";
+import * as path from "path";
 import { Construct } from "constructs";
 import * as lambda from "aws-cdk-lib/aws-lambda";
 import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
@@ -14,7 +15,7 @@ export class NmChckStack extends cdk.Stack {
       this,
       "NmChckRouterLambda",
       {
-        entry: "src/index.tsx",
+        entry: path.join(__dirname, "../../packages/lambdas/src/index.tsx"),
         runtime: lambda.Runtime.NODEJS_20_X,
         bundling: {
           minify: true,

@@ -1,0 +1,16 @@
+{
+  "name": "@nmchck/infra",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "cdk deploy",
+    "synth": "cdk synth"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.136.0",
+    "constructs": "^10.1.136",
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.1"
+  }
+}

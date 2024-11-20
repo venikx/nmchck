@@ -1,3 +1,4 @@
+import path from "path";
 import { RemovalPolicy } from "aws-cdk-lib";
 import {
   AttributeType,
@@ -24,9 +25,9 @@ export class HitCounter extends Construct {
     });
 
     this.handler = new Function(this, "HitCounterHandler", {
-      runtime: Runtime.NODEJS_20_X,
+      code: Code.fromAsset(path.join(__dirname, "../../packages/lambdas/src/")),
       handler: "hit-counter.handler",
-      code: Code.fromAsset("src/lambdas"),
+      runtime: Runtime.NODEJS_20_X,
       environment: {
         DOWNSTREAM_FUNCTION_NAME: props.downstream.functionName,
         HITS_TABLE_NAME: table.tableName,
