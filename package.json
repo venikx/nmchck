@@ -1,11 +1,14 @@
 {
   "name": "nmchck",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "workspaces": ["packages/*", "infra"],
   "scripts": {
-    "build": "npm run build --workspace frontend && npm run build --workspace lambda-function",
-    "deploy": "npm run deploy --workspace infra"
+    "deploy": "npm run build:frontend && npm run deploy:cdk",
+    "diff": "npm run build:frontend && npm run diff:cdk",
+    "build:frontend": "npm run build -w @nmchck/frontend",
+    "deploy:cdk": "npm run deploy -w @nmchck/infra",
+    "diff:cdk": "npm run diff -w @nmchck/infra"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",

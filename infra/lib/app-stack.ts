@@ -6,6 +6,7 @@ import * as lambdaNodejs from "aws-cdk-lib/aws-lambda-nodejs";
 import * as apigateway from "aws-cdk-lib/aws-apigateway";
 
 import { HitCounter } from "./hit-counter";
+import { StaticSite } from "./frontend-construct";
 
 export class NmChckStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -39,5 +40,7 @@ export class NmChckStack extends cdk.Stack {
     //new cdk.CfnOutput(this, 'ApiUrl', {
     //  value: api.url,
     //});
+
+    const frontend = new StaticSite(this, "NmCheckStaticSite");
   }
 }
