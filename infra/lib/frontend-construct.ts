@@ -117,7 +117,7 @@ export class StaticSite extends Construct {
     new s3deploy.BucketDeployment(this, "DeployWithInvalidation", {
       sources: [
         s3deploy.Source.asset(
-          path.join(__dirname, "../../packages/frontend/.output/public"),
+          path.join(__dirname, "../../frontend/.output/public"),
         ),
       ],
       destinationBucket: siteBucket,

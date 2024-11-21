@@ -2,7 +2,7 @@
   "name": "nmchck",
   "private": true,
   "version": "0.0.1",
-  "workspaces": ["packages/*", "infra"],
+  "workspaces": ["infra", "frontend", "lambdas"],
   "scripts": {
     "deploy": "npm run build:frontend && npm run deploy:cdk",
     "diff": "npm run build:frontend && npm run diff:cdk",

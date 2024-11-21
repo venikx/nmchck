@@ -16,7 +16,7 @@ export class NmChckStack extends cdk.Stack {
       this,
       "NmChckRouterLambda",
       {
-        entry: path.join(__dirname, "../../packages/lambdas/src/index.tsx"),
+        entry: path.join(__dirname, "../../lambdas/src/index.tsx"),
         runtime: lambda.Runtime.NODEJS_20_X,
         bundling: {
           minify: true,
