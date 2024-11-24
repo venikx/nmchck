@@ -1,4 +1,5 @@
 {
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -7,9 +8,8 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "allowJs": true,
-    "strict": true,
     "noEmit": true,
+    "skipLibCheck": true,
     "types": ["vinxi/types/client"],
     "isolatedModules": true,
     "paths": {

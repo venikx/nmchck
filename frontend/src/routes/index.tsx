@@ -1,12 +1,12 @@
 import { Title } from "@solidjs/meta";
-import Counter from "~/components/Counter";
+import { PhoneInput } from "~/components/PhoneInput";
 
 export default function Home() {
   return (
     <main>
       <Title>Hello World</Title>
       <h1>Hello world!</h1>
-      <Counter />
+      <PhoneInput />
       <p>
         Visit{" "}
         <a href="https://start.solidjs.com" target="_blank">
