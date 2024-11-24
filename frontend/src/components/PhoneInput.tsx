@@ -55,19 +55,13 @@ export function PhoneInput() {
     const rawValue = e.currentTarget.value;
     const cursorPosition = e.currentTarget.selectionStart || 0;
 
-    try {
-      const countryCode = selectedCountry();
-      const parsedNumber = parsePhoneNumber(
-        rawValue,
-        countryCode !== "ZZ" ? countryCode : undefined,
-      );
-      setPhoneNumber(parsedNumber.number);
+    setPhoneNumber(parseIncompletePhoneNumber(rawValue));
 
-      if (countryCode != "ZZ" && phoneNumber().startsWith("+")) {
-        setSelectedCountry(parsedNumber.country || "ZZ");
-      }
-    } catch (e) {
-      setPhoneNumber(parseIncompletePhoneNumber(rawValue));
+    if (phoneNumber().startsWith("+")) {
+      try {
+        const parsedNumber = parsePhoneNumber(rawValue);
+        parsedNumber.country && setSelectedCountry(parsedNumber.country);
+      } catch (_) {}
     }
 
     const newCursor = translateCursorPosition(
