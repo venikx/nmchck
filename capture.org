@@ -1,0 +1,24 @@
+* Inbox
+** TODO Figure out and document the UX I wish for a phone input
+:LOGBOOK:
+CLOCK: [2024-11-24 Sun 23:50]--[2024-11-24 Sun 23:51] =>  0:01
+:END:
+
+[[file:~/code/personal/nmchck/frontend/src/components/PhoneInput.tsx::if (countryCode != "ZZ" && phoneNumber().startsWith("+")) {]]
+
+*** DONE country change when you type +358
+CLOSED: [2024-11-24 Sun 23:52]
+*** DONE formats depending on the country formatting
+CLOSED: [2024-11-24 Sun 23:52]
+*** DONE keeps the cursor in the correct position despite formatting changes
+CLOSED: [2024-11-24 Sun 23:53]
+*** TODO figure out how I want to handle removing +
+probably nothing, but it's good to check
+*** KILL if there's no +, and you switch to "international", translate the code
+CLOSED: [2024-11-25 Mon 00:12]
+
+useless, since then it should immediately switch back to the Finnish flag
+*** TODO document the actual UX and why
+** TODO create a headless ui for with bindings for solid
+** TODO figure out the ui design for the phone input
+** TODO figure out the ui design for the whole site
