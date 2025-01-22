@@ -1,9 +1,0 @@
-{
-  "name": "@nmchck/lambda",
-  "version": "1.0.0",
-  "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.696.0",
-    "@aws-sdk/client-lambda": "^3.696.0",
-    "hono": "^4.6.10"
-  }
-}

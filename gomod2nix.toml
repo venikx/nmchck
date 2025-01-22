@@ -1,0 +1,54 @@
+schema = 3
+
+[mod]
+  [mod."github.com/Masterminds/semver/v3"]
+    version = "v3.3.1"
+    hash = "sha256-/4klCUODDVG0qnxNuGCPWUTBzOSgQl4pwvyeQXrqlCw="
+  [mod."github.com/aws/aws-cdk-go/awscdk/v2"]
+    version = "v2.176.0"
+    hash = "sha256-KVEKNY5lAgEff05OpqNA4dIhnqo8DUH0s9AwNkLbBTs="
+  [mod."github.com/aws/constructs-go/constructs/v10"]
+    version = "v10.4.2"
+    hash = "sha256-E/n5+tzV7Aug918T/kQ18QwIkBYwSBqBt29TKZWtxRo="
+  [mod."github.com/aws/jsii-runtime-go"]
+    version = "v1.106.0"
+    hash = "sha256-zB4NybTge9q6LNmXRngvOvcKbyhkITF5xzcR66O15As="
+  [mod."github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2"]
+    version = "v2.2.208"
+    hash = "sha256-i3WwIgYP0mHekN1M2QHnEDzjr5d9s1NUNmf4KqDLypE="
+  [mod."github.com/cdklabs/awscdk-asset-kubectl-go/kubectlv20/v2"]
+    version = "v2.1.3"
+    hash = "sha256-bQfZFwbwFVJ3HyqEYGnhUVP7HwNu3FgnTrjpSn61rGA="
+  [mod."github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2"]
+    version = "v2.1.0"
+    hash = "sha256-WFWN9ypG77/e64EmNUxRScQrlqGVz3060g9Ae5e7pkw="
+  [mod."github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v39"]
+    version = "v39.1.34"
+    hash = "sha256-NSfjHUyUBMNTSdKIEw2qCw6e6peFHfw7OKdUP+l8jyE="
+  [mod."github.com/fatih/color"]
+    version = "v1.18.0"
+    hash = "sha256-pP5y72FSbi4j/BjyVq/XbAOFjzNjMxZt2R/lFFxGWvY="
+  [mod."github.com/mattn/go-colorable"]
+    version = "v0.1.13"
+    hash = "sha256-qb3Qbo0CELGRIzvw7NVM1g/aayaz4Tguppk9MD2/OI8="
+  [mod."github.com/mattn/go-isatty"]
+    version = "v0.0.20"
+    hash = "sha256-qhw9hWtU5wnyFyuMbKx+7RB8ckQaFQ8D+8GKPkN3HHQ="
+  [mod."github.com/yuin/goldmark"]
+    version = "v1.4.13"
+    hash = "sha256-GVwFKZY6moIS6I0ZGuio/WtDif+lkZRfqWS6b4AAJyI="
+  [mod."golang.org/x/lint"]
+    version = "v0.0.0-20210508222113-6edffad5e616"
+    hash = "sha256-U4o4PZ8KRpwbUN+E0VwewWNCiK5OGeBIpAMLJEbO9Ng="
+  [mod."golang.org/x/mod"]
+    version = "v0.22.0"
+    hash = "sha256-U+jUPEHP4QUm0eu9upRnwBxeKhpUknEcn8l8ZvxgZ58="
+  [mod."golang.org/x/sync"]
+    version = "v0.10.0"
+    hash = "sha256-HWruKClrdoBKVdxKCyoazxeQV4dIYLdkHekQvx275/o="
+  [mod."golang.org/x/sys"]
+    version = "v0.28.0"
+    hash = "sha256-kzSlDo5FKsQU9cLefIt2dueGUfz9XuEW+mGSGlPATGc="
+  [mod."golang.org/x/tools"]
+    version = "v0.28.0"
+    hash = "sha256-3CTCErE/1HqQWApVoZDaIFS6t05NX/8rtJ2SDUxMZQg="

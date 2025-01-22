@@ -1,36 +1,13 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
 .DS_Store
-*.pem
+.idea
+*.log
+tmp/
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Nix
+result*
 
-# local env files
-.env*.local
-.envrc
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Misc
+.direnv
 
 # cdk
 cdk.context.json
