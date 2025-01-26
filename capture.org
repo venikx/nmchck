@@ -22,3 +22,4 @@ useless, since then it should immediately switch back to the Finnish flag
 ** TODO create a headless ui for with bindings for solid
 ** TODO figure out the ui design for the phone input
 ** TODO figure out the ui design for the whole site
+** STRT Migrate to Golang for backend
